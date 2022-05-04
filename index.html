@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+        crossorigin="anonymous">
+
+    <!-- SweetAlert2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    
+    <!-- Charts.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+    <!-- Scripts -->
+    <script src="js/script.js"></script>
+
+    <title>Test WebApi</title>
+</head>
+
+<body>
+    <div class="container my-5 text-center">
+        <button class="btn btn-danger w-100" onclick="traer()">Obtener Índices</button>
+        <div class="mt-5">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Valor</th>
+                        <th scope="col">Mayor</th>
+                        <th scope="col">Menor</th> 
+                    </tr>
+                </thead>
+                <tbody id="contenido">
+                    
+                </tbody>
+            </table>
+        </div>
+
+        <canvas id="myChart" width="400" height="400"></canvas>
+    </div>
+</body>
+
+
+</html>
